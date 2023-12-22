@@ -87,6 +87,11 @@ h1 ~ p {
     margin-left: 50px;
 }
 
+input:focus{
+    outline: none;
+    border: 2px solid turquoise;
+}
+
 .formA, .formB, .formC {
     display: flex;
     flex-direction: row;

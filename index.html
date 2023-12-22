@@ -63,11 +63,14 @@
                         <div class="formC">
                             <div class="form-r5">
                                 <label for="pwd">PASSWORD<span aria-label="required">*</span></label>
-                                <input type="password" name="pwd" id="pwd" required>
+                                <input type="password" name="pwd" class="error" id="pwd" min='5' max='20'
+                                    onkeyup="check()" required>
                             </div>
                             <div class="form-r6">
                                 <label for="pwd_confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-                                <input type="password" name="pwd_confirm" id="pwd_confirm" required>
+                                <input type="password" name="pwd_confirm" class="error" id="pwd_confirm" min='5'
+                                    max='20' onkeyup="check()" required>
+                                <span id="message"></span>
                             </div>
                         </div>
                     </div>
@@ -80,6 +83,22 @@
             </div>
         </div>
     </div>
+    <script>
+
+        const check = function () {
+            const pwd = document.querySelector('#pwd');
+            const pwdConfirmation = document.querySelector('#pwd_confirm');
+            const message = document.querySelector('#message');
+
+            if (pwd.value !== pwd_confirm.value) {
+
+                message.textContent = '* Passwords do not match';
+            } else {
+                message.textContent = '';
+            }
+        }
+
+    </script>
 </body>
 
 </html>
