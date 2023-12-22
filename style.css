@@ -3,16 +3,22 @@
     font-family: norse;
     src: url(Norse-Bold.otf);
 }
+/* div{
+    border: 2px solid black;
+} */
 
 body{
     padding: 0px;
     margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .main-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
 #brand-img{
     height: 100vh;
     width: 35vw;
@@ -27,8 +33,8 @@ body{
     position: absolute;
     background-color: black;
     opacity: 50%;
-    top: 415px;
-    width: 35%;
+    top: 350px;
+    width: calc(35vw);
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
@@ -41,9 +47,82 @@ body{
     width: 105px;
 }
 
-p{
+.p1{
     color: white;
     font-family: "norse", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-size: 70px;
     /* border: 2px solid red; */
+}
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightgray; */
+    width: calc(65vw)
+}
+h1{
+    font-family: "norse", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 100px;
+}
+
+h1 ~ p {
+    font-family: "norse", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 2.2rem;
+    /* margin-left: 40px;*/
+    text-align: center;
+    margin-top: 40px;
+    color: darkslategray;
+}
+
+.container-2b-b{
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    border: 0.5px solid #E5E7EB;
+}
+
+.let{
+    font-size: 2.2rem;
+    font-family: "norse", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-left: 50px;
+}
+
+.formA, .formB, .formC {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: center;
+    gap: 80px;
+    margin-left: 50px;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-r1, .form-r2, .form-r3, .form-r4, .form-r5, .form-r6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.container-2b-a3{
+    display: flex;
+    margin-top: calc(5vh);
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 45px;
+}
+
+button {
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    background-color: sandybrown;
+    border-radius: 10px;
+}
+
+button ~ p{
+    font-size: 20px;
 }
